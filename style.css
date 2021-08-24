@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: Nunito, sans-serif;
+    color: #1c1c1c ;
+    background-size: cover;
+}
+
+h1, h2, h3 {
+    font-size: Asap, sans-serif;
+    color: #000000 ;
+}
+
+
+nav{
+     display: flex;
+     cursor: pointer;
+     flex-direction:column;
+     justify-content: space-around;
+     background-color: #87CEFA;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     
+}
+
+
+nav > a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+    font-size: 32PX;
+    font-family:Yallowtail, serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0 ;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(https://cdn.pixabay.com/photo/2018/01/25/08/14/aisle-3105629_960_720.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#FFFFFF;
+    font-size: larger;
+    text-align: center;
+    padding: 20px;
+   
+
+}
+
+header img{
+    width: 400px;
+}
+
+header h1{
+    color: #000000;
+}
+
+header p{
+    margin-bottom: 2em;
+}
+
+#sobre{
+    background-color: #87CEFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: center;
+    padding: 10px 10px 20px 20px;
+    background-color: color #191919;
+    color: #000000;
+
+
+}
+
+#sobre h2{
+    color: #000000;
+
+
+}
+
+#sobre p {
+    color: #000000;
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+
+
+#contato {
+    background-color:#87CEFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+#contato h2{
+    color: #000000;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+    
+@media screen and (min-width: 768px) {
+    
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    
+}
+
+
+
+
+#produtos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+}
+
+#produtos__img{
+    width: 100%;
+    
+    
+
+}
+
+
+#produtos h2{
+    width: 100%;
+    text-align: center;
+    color: #000000;
+}
+
+#produtos img{
+    width: 33.3333333%;
+}
+
+#contato{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contato h2, #contato p {
+    width: 100%;
+}
+.zomm{
+    overflow: hidden;
+}
+
+.zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.zoom:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+    }
+
+    ul li {
+        position: relative;
+        }
+        li ul {
+            position: relative;
+            left: 149px;
+            top: 0;
+            display: none;
+            }
+            ul li a {
+                display: block;
+                text-decoration: none;
+                color: #777;
+                padding: 5px;
+                border: #23232e;
+                border-bottom: 0;
+                }
+                /* Fix IE. Hide from IE Mac \*/
+    * html ul li { float: left; }
+    * html ul li a { height: 1%; }
+    /* End */
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 150px;
+        border-bottom: #87CEFA;
+        }
+
+        li:hover ul { display: flex; }
+        li:hover ul, li.over ul { 
+            display: block; 
+            }
+
+#produtos h3{
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+div{
+    display: inline;
+}
+
+#produtos{
+    background-color:#87CEFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+#produtos img {
+    width: 190px;
+}
+p{
+    color: #000000;
+}
+
+nav ul  a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#contato img{
+    width: 35px;
+}
